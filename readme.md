@@ -12,6 +12,11 @@ Welcome to the **Awesome Web Elements Showcase**, your go-to resource for explor
 
 Feel free to further customize this styled description to your liking, and adapt it to the specific elements and goals of your repository.
 
+<br>
+
+---
+
+<br>
 
 ## Table of Contents
 - [Carousel](#carousel)
@@ -24,50 +29,33 @@ Feel free to further customize this styled description to your liking, and adapt
 
 ---
 
-<!-- Section 1: Navigation Menus -->
+
 ## 1. Carousel 
 <p align="center">
-  <img src="images/carousel.png" alt="Carousel">
+  <img src="images/carousel.gif" alt="Carousel" width="100%">
 </p>
 
 Explore captivating navigation menus that enhance user experience and navigation on your websites. From sleek dropdowns to elegant navigation bars, these elements add both functionality and aesthetics.
 
-<!-- Section 2: Interactive Forms -->
-## 2. Interactive Forms
+
+## 2. Single hamburger menu
 <p align="center">
-  <img src="images/form-element-1.png" alt="Form Element 1" width="300">
-  <img src="images/form-element-2.png" alt="Form Element 2" width="300">
+  <img src="images/single_menu.gif" alt="Single Menu" width="100%">
 </p>
 
 Discover interactive forms that engage users and streamline data collection. These form elements not only look great but also provide an intuitive and user-friendly experience.
 
-<!-- Section 3: Eye-Catching Animations -->
-## 3. Eye-Catching Animations
+## 3. Multiple hamburger menus
 <p align="center">
-  <img src="images/animation-1.gif" alt="Animation 1" width="300">
-  <img src="images/animation-2.gif" alt="Animation 2" width="300">
+  <img src="images/multiple_menu.gif" alt="Multiple Menus" width="100%">
 </p>
 
 Add life to your websites with eye-catching animations. These animations are designed to grab users' attention and create memorable interactions that leave a lasting impression.
 
-<!-- Section 4: Responsive Layouts -->
-## 4. Responsive Layouts
+## 4. Alarm animation
 <p align="center">
-  <img src="images/layout-1.png" alt="Layout 1" width="300">
-  <img src="images/layout-2.png" alt="Layout 2" width="300">
+  <img src="images/alarm_animation.gif" alt="Alarm Animation" width="100%">
 </p>
 
 Ensure your websites look great on all devices with these responsive layouts. Whether it's a mobile-friendly design or a flexible grid system, these layouts adapt seamlessly to various screen sizes.
 
-<!-- Section 5: Ready-to-Use Templates -->
-## 5. Ready-to-Use Templates
-<p align="center">
-  <img src="images/template-1.png" alt="Template 1" width="300">
-  <img src="images/template-2.png" alt="Template 2" width="300">
-</p>
-
-Save time and effort with our ready-to-use templates. These templates cover a range of website styles and designs, allowing you to kickstart your projects with a strong foundation.
-
----
-
-Feel free to replace the image URLs, descriptions, and section titles with actual content relevant to your repository. This structured approach makes it easy for users to navigate and explore specific sections of your project.
