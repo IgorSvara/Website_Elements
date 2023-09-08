@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #337ccf;
+    color: #ffc436;
+}
+p {
+    margin: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.wrapper svg {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #4c4c4c;
+}
+svg .svg-elem-1 {
+    stroke-dashoffset: 52.26548245743669px;
+    stroke-dasharray: 52.26548245743669px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+
+svg.active .svg-elem-1 {
+    stroke-dashoffset: 0;
+}
+
+svg .svg-elem-2 {
+    stroke-dashoffset: 6.242640495300293px;
+    stroke-dasharray: 6.242640495300293px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+}
+
+svg.active .svg-elem-2 {
+    stroke-dashoffset: 0;
+}
+
+svg .svg-elem-3 {
+    stroke-dashoffset: 6.242640495300293px;
+    stroke-dasharray: 6.242640495300293px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+}
+
+svg.active .svg-elem-3 {
+    stroke-dashoffset: 0;
+}
+
+svg .svg-elem-4 {
+    stroke-dashoffset: 5.30974268913269px;
+    stroke-dasharray: 5.30974268913269px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+}
+
+svg.active .svg-elem-4 {
+    stroke-dashoffset: 0;
+}
+
+svg .svg-elem-5 {
+    stroke-dashoffset: 5.316399097442627px;
+    stroke-dasharray: 5.316399097442627px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+}
+
+svg.active .svg-elem-5 {
+    stroke-dashoffset: 0;
+}
+
+svg .svg-elem-6 {
+    stroke-dashoffset: 10.485280990600586px;
+    stroke-dasharray: 10.485280990600586px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+}
+
+svg.active .svg-elem-6 {
+    stroke-dashoffset: 0;
+}
