@@ -24,9 +24,7 @@ Feel free to further customize this styled description to your liking, and adapt
 
 <br>
 
-## 1. Carousel 
-
-<a name="carousel"></a>
+## 1. Carousel <a name="carousel"></a>
 
 <p align="center">
   <img src="images/carousel.gif" alt="Carousel" width="100%">
@@ -36,7 +34,8 @@ A seamless carousel element designed for easy item exploration. It smoothly loop
 
 <br>
 
-## 2. Single hamburger menu
+## 2. Single hamburger menu <a name="single_menu></a>
+
 <p align="center">
   <img src="images/single_menu.gif" alt="Single Menu" width="100%">
 </p>
@@ -45,7 +44,8 @@ An elegant single hamburger menu with a precise left-pointing arrow animation.
 
 <br>
 
-## 3. Multiple hamburger menus
+## 3. Multiple hamburger menus <a name="multiple_menu></a>
+
 <p align="center">
   <img src="images/multiple_menu.gif" alt="Multiple Menus" width="100%">
 </p>
