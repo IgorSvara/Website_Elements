@@ -1,0 +1,168 @@
+:root {
+    --body-width:1000px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+p {
+    margin: 0;
+}
+
+/*
+Header
+*/
+header {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 0px; /* Add padding for spacing */
+
+    /* Sticky header positioning */
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure the header appears above other content */
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+header .header-wrapper {
+    width: var(--body-width);
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+header div .logo {
+    background-color: #3498db;
+    width: 100px;
+    height: 60px;
+}
+/* CSS for the navigation menu within the header */
+header div nav {
+    text-align: right;
+    flex: 1;
+}
+header div nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+header div nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header div nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+Some random content for website volume.
+The anchor handling is worth noting since it
+uses an offset to respect the sticky header.
+*/
+.container {
+    max-width: var(--body-width);
+    margin: 20px auto;
+    /*padding: 20px;*/
+    padding-bottom: 500px;
+}
+.rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733;
+    margin: 10px;
+    display: inline-block;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+/*
+Fixed element
+*/
+.circle {
+    width: 150px;
+    height: 250px;
+    background-color: #3498db;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.83);
+
+    position: fixed;
+    top: 40%;
+    right: 20px;
+    z-index: 50; /* Place it above other content */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle .i {
+    color: white;
+    height: 50px;
+    width: 50px;
+}
+
+/*
+A clean card for displaying content.
+*/
+.back {
+    height: 400px;
+    width: 100%;
+    background: lightslategrey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame {
+    height: 250px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+.frame .top{
+    height: 40%;
+    background: #1a2c48 url('img.jpg') top/cover no-repeat;
+}
+.frame .middle {
+    height: 15%;
+    background: #007ae2;
+
+    box-shadow: 0 0 5px #000 ;
+
+    display: flex;
+    align-items: center;
+}
+.frame .bottom {
+    flex: 1;
+    background: #fdfdfd;
+    padding: 20px 15px;
+}
+.frame .bottom p {
+    color: black;
+}
+.frame .middle p {
+    color: white;
+    text-transform: uppercase;
+
+    margin-left: 10px;
+}
+
+/*
+Footer
+ */
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add some padding for spacing */
+}
