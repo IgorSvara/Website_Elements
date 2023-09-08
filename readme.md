@@ -34,7 +34,8 @@ A seamless carousel element designed for easy item exploration. It smoothly loop
 
 <br>
 
-## 2. Single hamburger menu <a name="single_menu></a>
+## 2. Single hamburger menu 
+<a name="single_menu></a>
 
 <p align="center">
   <img src="images/single_menu.gif" alt="Single Menu" width="100%">
@@ -44,7 +45,8 @@ An elegant single hamburger menu with a precise left-pointing arrow animation.
 
 <br>
 
-## 3. Multiple hamburger menus <a name="multiple_menu></a>
+## 3. Multiple hamburger menus 
+<a name="multiple_menu></a>
 
 <p align="center">
   <img src="images/multiple_menu.gif" alt="Multiple Menus" width="100%">
