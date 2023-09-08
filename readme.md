@@ -27,7 +27,7 @@ Feel free to further customize this styled description to your liking, and adapt
 <!-- Section 1: Navigation Menus -->
 ## 1. Carousel 
 <p align="center">
-  <img src="images/carousel.png" alt="Carousel" width="300">
+  <img src="images/carousel.png" alt="Carousel">
 </p>
 
 Explore captivating navigation menus that enhance user experience and navigation on your websites. From sleek dropdowns to elegant navigation bars, these elements add both functionality and aesthetics.
