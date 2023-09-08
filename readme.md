@@ -35,27 +35,28 @@ Feel free to further customize this styled description to your liking, and adapt
   <img src="images/carousel.gif" alt="Carousel" width="100%">
 </p>
 
-Explore captivating navigation menus that enhance user experience and navigation on your websites. From sleek dropdowns to elegant navigation bars, these elements add both functionality and aesthetics.
-
-
+A seamless carousel element designed for easy item exploration. It smoothly loops back to the beginning after reaching the end.
 ## 2. Single hamburger menu
 <p align="center">
   <img src="images/single_menu.gif" alt="Single Menu" width="100%">
 </p>
 
-Discover interactive forms that engage users and streamline data collection. These form elements not only look great but also provide an intuitive and user-friendly experience.
+An elegant single hamburger menu with a precise left-pointing arrow animation.
 
 ## 3. Multiple hamburger menus
 <p align="center">
   <img src="images/multiple_menu.gif" alt="Multiple Menus" width="100%">
 </p>
 
-Add life to your websites with eye-catching animations. These animations are designed to grab users' attention and create memorable interactions that leave a lasting impression.
+A collection of eight menu icons that transition gracefully from a hamburger menu to a closing icon.
 
 ## 4. Alarm animation
 <p align="center">
   <img src="images/alarm_animation.gif" alt="Alarm Animation" width="100%">
 </p>
 
-Ensure your websites look great on all devices with these responsive layouts. Whether it's a mobile-friendly design or a flexible grid system, these layouts adapt seamlessly to various screen sizes.
+An animated clock icon that disappears and reappears with a stylish animation when clicked.
 
+## more ...
+
+There is much more content in this repo. Check it out.
