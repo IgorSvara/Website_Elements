@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website</title>
+  <link rel="stylesheet" type="text/css" href="absolute_stile.css">
+  <script type="module" src="https://unpkg.com/lucide@latest/index.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo"></div>
+      <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <div class="back">
+    <div class="frame">
+      <div class="top"></div>
+      <div class="middle">
+        <p>Random Name</p>
+      </div>
+      <div class="bottom">
+        <p>Java Course - Mastering the Fundamentals</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">ITEM 1</div>
+      <div class="carousel-item">ITEM 2</div>
+      <div class="carousel-item">ITEM 3</div>
+      <div class="carousel-item">ITEM 4</div>
+      <div class="carousel-item">ITEM 5</div>
+      <div class="carousel-item">ITEM 6</div>
+      <div class="carousel-item">ITEM 7</div>
+      <div class="carousel-item">ITEM 8</div>
+    </div>
+    <div class="buttons">
+      <button id="prev-button" class="caro-button"><i class="i" data-lucide="arrow-big-left-dash"></i></button>
+      <button id="next-button" class="caro-button"><i class="i" data-lucide="arrow-big-right-dash"></i></button>
+    </div>
+  </div>
+
+
+
+  <div id="section1" class="container">
+    <h2>About Us</h2>
+    <p>This is a simple website with some text and solid rectangles instead of images.</p>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <!-- Add more rectangles as needed -->
+  </div>
+  <div class="divider"></div>
+  <div id="section2" class="container">
+    <h2>About Us</h2>
+    <p>This is a simple website with some text and solid rectangles instead of images.</p>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <!-- Add more rectangles as needed -->
+  </div>
+  <div class="divider"></div>
+  <div id="section3" class="container">
+    <h2>About Us</h2>
+    <p>This is a simple website with some text and solid rectangles instead of images.</p>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <!-- Add more rectangles as needed -->
+  </div>
+
+  <div class="circle"><i data-lucide="alert-circle" class="i"></i>
+  </div>
+
+
+
+
+  <footer>
+    <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    <p>Contact: contact@example.com</p>
+  </footer>
+
+  <script src="carousel.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
