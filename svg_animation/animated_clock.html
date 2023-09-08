@@ -1,0 +1,110 @@
+
+
+<!--
+TODO this shit is not working for some reason
+  the button stuff is correct found it on the internet
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Animation</title>
+  <style>
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  .wrapper svg {
+    border: solid #f0f0f0 1px;
+  }
+    svg .svg-elem-1 {
+      stroke-dashoffset: 52.26548245743669px;
+      stroke-dasharray: 52.26548245743669px;
+      -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+      transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+    }
+
+    svg.active .svg-elem-1 {
+      stroke-dashoffset: 0;
+    }
+
+    svg .svg-elem-2 {
+      stroke-dashoffset: 6.242640495300293px;
+      stroke-dasharray: 6.242640495300293px;
+      -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+      transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+    }
+
+    svg.active .svg-elem-2 {
+      stroke-dashoffset: 0;
+    }
+
+    svg .svg-elem-3 {
+      stroke-dashoffset: 6.242640495300293px;
+      stroke-dasharray: 6.242640495300293px;
+      -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+      transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+    }
+
+    svg.active .svg-elem-3 {
+      stroke-dashoffset: 0;
+    }
+
+    svg .svg-elem-4 {
+      stroke-dashoffset: 5.30974268913269px;
+      stroke-dasharray: 5.30974268913269px;
+      -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+      transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+    }
+
+    svg.active .svg-elem-4 {
+      stroke-dashoffset: 0;
+    }
+
+    svg .svg-elem-5 {
+      stroke-dashoffset: 5.316399097442627px;
+      stroke-dasharray: 5.316399097442627px;
+      -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+      transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+    }
+
+    svg.active .svg-elem-5 {
+      stroke-dashoffset: 0;
+    }
+
+    svg .svg-elem-6 {
+      stroke-dashoffset: 10.485280990600586px;
+      stroke-dasharray: 10.485280990600586px;
+      -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+      transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+    }
+
+    svg.active .svg-elem-6 {
+      stroke-dashoffset: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <p>Click the square</p>
+  <svg onclick="this.classList.toggle('active')" xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alarm-check">
+    <circle cx="12" cy="13" r="8" class="svg-elem-1"></circle>
+    <path d="M5 3 2 6" class="svg-elem-2"></path>
+    <path d="m22 6-3-3" class="svg-elem-3"></path>
+    <path d="M6.38 18.7 4 21" class="svg-elem-4"></path>
+    <path d="M17.64 18.67 20 21" class="svg-elem-5"></path>
+    <path d="m9 13 2 2 4-4" class="svg-elem-6"></path>
+  </svg>
+</div>
+
+</body>
+</html>

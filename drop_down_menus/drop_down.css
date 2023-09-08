@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /*position: relative;*/
+}
+
+.menu-icon-wrapper {
+    background-color: #333;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /*text-align: center;*/
+}
+.menu-icon {
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    border: solid blue 2px;
+}
+
+.dropdown-menu-wrapper {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+
+    z-index: 50;
+}
+.dropdown-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    /*height: 300px;*/
+
+    background-color: #823434;
+    /*transition: transform 0.5s ease;*/
+    /*text-align: right;*/
+
+    border-radius: 0 0 20px 20px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 30px 50px;
+}
+
+.dropdown-menu li {
+    padding: 15px 0;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    width: 100%;
+    height: 250px;
+
+    background-color: #ffc533;
+}
+.liner {
+    width: 100%;
+    height: 200px;
+    position: relative;
+
+    background-color: #797979;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.imag {
+    position: absolute;
+    left: 30%;
+    top: -50px;
+
+    width: 150px;
+    height: 200px;
+    background-color: forestgreen;
+
+    box-shadow: 10px 10px 30px #000;
+}
+
+.liner .caption {
+    /*margin: 10px 10px 10px 30%;*/
+    margin-left: 8%;
+    width: 500px;
+}
+.liner > h2 {
+    margin: 10px;
+
+}
+.liner > p {
+    margin: 0;
+}
+
+.box-frame{
+
+}
+.box {
+    margin: 20px auto;
+    padding: 0;
+    width: 200px;
+    height: 300px;
+    background-color: lightgray;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+.name {
+    display: none;
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+.box:hover .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(51, 51, 51, 0.45);
+}
