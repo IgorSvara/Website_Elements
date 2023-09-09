@@ -16,21 +16,23 @@ Feel free to further customize this styled description to your liking, and adapt
 <br>
 
 ## Table of Contents
-- [Carousel](#carousel)
+- [Pagination bar](#pagination-bar)
 - [Single hamburger menu](#single_menu)
 - [Multiple hamburger menus](#multiple_menu)
+- [Carousel](#carousel)
 - [Alarm animation](#alarm_animation)
 - more...
 
 <br>
 
-## 1. Carousel <a name="carousel"></a>
+## 1. Pagination bar <a name="pagination_bar"></a>
 
 <p align="center">
-  <img src="images/carousel.gif" alt="Carousel" width="100%">
+<img src="images/pagination_bar.gif" alt="Pagination bar" width="100%">
 </p>
 
-A seamless carousel element designed for easy item exploration. It smoothly loops back to the beginning after reaching the end.
+A pagination bar that gives a quick idea of the amount of content and where 
+the view is currently at. Simple and minimal design.
 
 <br>
 
@@ -54,7 +56,17 @@ A collection of eight menu icons that transition gracefully from a hamburger men
 
 <br>
 
-## 4. Alarm animation <a name="alarm_animation"></a>
+## 4. Carousel <a name="carousel"></a>
+
+<p align="center">
+  <img src="images/carousel.gif" alt="Carousel" width="100%">
+</p>
+
+A seamless carousel element designed for easy item exploration. It smoothly loops back to the beginning after reaching the end.
+
+<br>
+
+## 5. Alarm animation <a name="alarm_animation"></a>
 
 <p align="center">
   <img src="images/alarm_animation.gif" alt="Alarm Animation" width="100%">
@@ -63,7 +75,6 @@ A collection of eight menu icons that transition gracefully from a hamburger men
 An animated clock icon that disappears and reappears with a stylish animation when clicked.
 
 <br>
-
 
 ## more ...
 
