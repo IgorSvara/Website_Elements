@@ -1,0 +1,66 @@
+body {
+    min-height: 100vh;
+    background-color: #F4E0B9;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.pill {
+    width: 35px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 5px;
+    background-color: #7D7463;
+    transition: width 0.5s ease-in-out, background-color 0.2s ease-in-out;
+}
+.red-pill {
+    background-color: red;
+    width: 60px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: #7D7463;
+
+    margin: 0 10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.arrow {
+    width: 40%;
+    height: 40%;
+    box-shadow: 2px -2px 0 white;
+}
+.right-arrow {
+    position: absolute;
+    rotate: 45deg;
+    left: 15%;
+}
+.left-arrow {
+    position: absolute;
+    rotate: -135deg;
+    right: 15%;
+}
