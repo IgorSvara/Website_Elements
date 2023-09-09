@@ -16,7 +16,7 @@ Feel free to further customize this styled description to your liking, and adapt
 <br>
 
 ## Table of Contents
-- [Pagination bar](#pagination-bar)
+- [Pagination bar](#pagination_bar)
 - [Single hamburger menu](#single_menu)
 - [Multiple hamburger menus](#multiple_menu)
 - [Carousel](#carousel)
