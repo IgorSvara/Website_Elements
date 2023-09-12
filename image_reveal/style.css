@@ -1,0 +1,86 @@
+body {
+    min-height: 100vh;
+    background-color: #6B527F;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.col {
+    height: 100vh;
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.frame {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+
+    display: flex;
+    position: relative;
+
+    transition: width 0.7s ease-in-out;
+}
+
+.image {
+    height: 500px;
+    width: 500px
+;
+    position: absolute;
+
+    background-image: url("nasa_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: #7D7463;
+
+    margin: 0 10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.arrow {
+    width: 40%;
+    height: 40%;
+    box-shadow: 2px -2px 0 white;
+}
+.right-arrow {
+    position: absolute;
+    rotate: 45deg;
+    left: 15%;
+}
+.left-arrow {
+    position: absolute;
+    rotate: -135deg;
+    right: 15%;
+}
+.deactivate-button {
+    background-color: transparent;
+}
+.deactivate-button > .arrow {
+    box-shadow: 2px -2px 0 black;
+}
