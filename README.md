@@ -19,6 +19,7 @@ Feel free to further customize this styled description to your liking, and adapt
 - [Pagination bar](#pagination_bar)
 - [Single hamburger menu](#single_menu)
 - [Multiple hamburger menus](#multiple_menu)
+- [Image reveal](#image_reveal)
 - [Carousel](#carousel)
 - [Alarm animation](#alarm_animation)
 - more...
@@ -56,7 +57,17 @@ A collection of eight menu icons that transition gracefully from a hamburger men
 
 <br>
 
-## 4. Carousel <a name="carousel"></a>
+## 4. Image reveal <a name="image_reveal"></a>
+
+<p align="center">
+  <img src="images/image_reveal.gif" alt="Carousel" width="100%">
+</p>
+
+A nice way to display some images that has no background. This can be also used to implement a carousel as animation.
+
+<br>
+
+## 5. Carousel <a name="carousel"></a>
 
 <p align="center">
   <img src="images/carousel.gif" alt="Carousel" width="100%">
@@ -66,7 +77,7 @@ A seamless carousel element designed for easy item exploration. It smoothly loop
 
 <br>
 
-## 5. Alarm animation <a name="alarm_animation"></a>
+## 6. Alarm animation <a name="alarm_animation"></a>
 
 <p align="center">
   <img src="images/alarm_animation.gif" alt="Alarm Animation" width="100%">
