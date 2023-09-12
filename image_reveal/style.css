@@ -54,7 +54,7 @@ body {
     height: 40px;
     border-radius: 50%;
 
-    background-color: #7D7463;
+    background-color: #0066b2;
 
     margin: 0 10px;
     cursor: pointer;
@@ -82,5 +82,5 @@ body {
     background-color: transparent;
 }
 .deactivate-button > .arrow {
-    box-shadow: 2px -2px 0 black;
+    box-shadow: 2px -2px 0 #ec1c24;
 }
