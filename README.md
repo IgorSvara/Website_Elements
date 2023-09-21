@@ -17,6 +17,7 @@ Feel free to further customize this styled description to your liking, and adapt
 
 ## Table of Contents
 - [Pagination bar](#pagination_bar)
+- [Dependent sliders](#sliders)
 - [Single hamburger menu](#single_menu)
 - [Multiple hamburger menus](#multiple_menu)
 - [Image reveal](#image_reveal)
@@ -37,7 +38,17 @@ the view is currently at. Simple and minimal design.
 
 <br>
 
-## 2. Single hamburger menu <a name="single_menu"></a>
+## 2. Dependent sliders <a name="sliders"></a>
+
+<p align="center">
+  <img src="images/dependent_sliders.gif" alt="Single Menu" width="100%">
+</p>
+
+An arbitrary number of sliders related to each other.
+
+<br>
+
+## 3. Single hamburger menu <a name="single_menu"></a>
 
 <p align="center">
   <img src="images/single_menu.gif" alt="Single Menu" width="100%">
@@ -47,7 +58,7 @@ An elegant single hamburger menu with a precise left-pointing arrow animation.
 
 <br>
 
-## 3. Multiple hamburger menus <a name="multiple_menu"></a>
+## 4. Multiple hamburger menus <a name="multiple_menu"></a>
 
 <p align="center">
   <img src="images/multiple_menu.gif" alt="Multiple Menus" width="100%">
@@ -57,7 +68,7 @@ A collection of eight menu icons that transition gracefully from a hamburger men
 
 <br>
 
-## 4. Image reveal <a name="image_reveal"></a>
+## 5. Image reveal <a name="image_reveal"></a>
 
 <p align="center">
   <img src="images/image_reveal.gif" alt="Carousel" width="100%">
@@ -67,7 +78,7 @@ A nice way to display some images that has no background. This can be also used 
 
 <br>
 
-## 5. Carousel <a name="carousel"></a>
+## 6. Carousel <a name="carousel"></a>
 
 <p align="center">
   <img src="images/carousel.gif" alt="Carousel" width="100%">
@@ -77,7 +88,7 @@ A seamless carousel element designed for easy item exploration. It smoothly loop
 
 <br>
 
-## 6. Alarm animation <a name="alarm_animation"></a>
+## 7. Alarm animation <a name="alarm_animation"></a>
 
 <p align="center">
   <img src="images/alarm_animation.gif" alt="Alarm Animation" width="100%">
