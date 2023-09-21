@@ -1,0 +1,77 @@
+:root {
+    --slider_width: 10px;
+    --slider_thumb_width: 25px;
+    --slider_gap: 70px;
+    --div_padding:10px;
+}
+body {
+    font-family: "Gill Sans MT", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.sliders-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--div_padding);
+    gap: var(--slider_gap);
+}
+
+.slider-container {
+    width: var(--slider_width);
+    height: 200px;
+    position: relative;
+}
+
+/* Stile dello slider */
+.slider {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.slider-thumb {
+    width: var(--slider_thumb_width);
+    height: var(--slider_thumb_width);
+    background-color: #0099cc;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: calc(var(--slider_width) / 2 - var(--slider_thumb_width) / 2);
+
+    cursor: pointer;
+}
+
+
+
+
+.number-line {
+    display: flex;
+    justify-content: space-between;
+    /*width: 300px;*/
+    padding: var(--div_padding);
+    /*border-radius: 5px;*/
+    gap: var(--slider_width);
+}
+
+.number-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--slider_gap);
+    height: 30px;
+
+    color: #666666;
+    font-size: 36px;
+    font-weight: bold;
+}
