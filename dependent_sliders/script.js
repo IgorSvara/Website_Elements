@@ -8,10 +8,9 @@ let isDragging = false;
 let targetSlider = null;
 
 sliderThumbs.forEach((ele,idx) => {
-    ele.style.transform = `translateY(${slider.clientHeight - (slider.clientHeight / sliderThumbs.length) - ele.clientHeight / 2}px)`;
-    changeNumber(ele, idx);
+    ele.style.transform = `translateY(${slider.clientHeight - (slider.clientHeight / 2) - ele.clientHeight / 2}px)`;
 });
-
+refreshNumbers();
 
 sliderThumbs.forEach((item) => {
     item.addEventListener("mousedown", (e) => {
@@ -20,10 +19,9 @@ sliderThumbs.forEach((item) => {
     });
 });
 
-
-
 document.addEventListener("mouseup", () => {
     isDragging = false;
+    targetSlider = null;
 });
 
 document.addEventListener("mousemove", (e) => {
@@ -44,22 +42,15 @@ function getPosition (ele) {
 function setPosition (ele, newY) {
     return ele.style.transform = `translateY(${newY - ele.clientHeight/2}px)`;
 }
-// TODO numbers are inaccurate, find a solution to make them precise
-function changeNumber(ele, index) {
-    const position = getPosition(ele);
-    // let sum = 0;
-    // numbers.forEach((number,num_idx) => {
-    //     if(num_idx !== index) {
-    //         sum += number;
-    //     }
-    // })
-    let value = Math.round((slider.clientHeight - position )/ slider.clientHeight * MAX_VALUE);
-    // while (value + sum !== MAX_VALUE ) {
-    //     value += (value + sum) > MAX_VALUE ? -1 : 1;
-    // }
-    numbers[index].textContent = `${value}`;
+function refreshNumbers() {
+    sliderThumbs.forEach((ele, idx) => {
+        const position = getPosition(ele);
+
+        let value = Math.round((slider.clientHeight - position )/ slider.clientHeight * MAX_VALUE);
+
+        numbers[idx].textContent = `${value}`;
+    });
 }
-// TODO treat case where there is one slider, partial move invalid
 function correctRestPosition(ele, m_amount) { // m_amount in the direction of the moved slider
     let excluded = [ele];
     let c = 0;
@@ -76,7 +67,7 @@ function correctRestPosition(ele, m_amount) { // m_amount in the direction of th
         const sliders_n = count < 1 ? 1 : count;
         const partial_move = m_amount / sliders_n;
 
-        sliderThumbs.forEach((inner_ele, inner_ele_idx) => {
+        sliderThumbs.forEach((inner_ele) => {
             if (! excluded.includes(inner_ele)) {
                 // move the element by its partial move
                 const current_pos = getPosition(inner_ele);
@@ -90,9 +81,8 @@ function correctRestPosition(ele, m_amount) { // m_amount in the direction of th
                 setPosition(inner_ele, where);
                 m_amount -= partial_move;
             }
-            changeNumber(inner_ele, inner_ele_idx);
         })
         m_amount += residual;
-
+        refreshNumbers();
     }
 }
