@@ -18,14 +18,14 @@ a {
     margin: 0;
 }
 
-.button-banner {
+.common_button-banner {
     position: fixed;
 
     left: 30px;
     top: 30px;
 }
 
-.button-container {
+.common_button-container {
     font-family: "Droid Sans", sans-serif;
     font-weight: bold;
 
@@ -39,7 +39,7 @@ a {
     overflow: hidden;
 }
 
-.button {
+.common_button {
     font-size: var(--text_size);
     color: var(--text_color);
 
@@ -49,7 +49,7 @@ a {
     transform: translate(-50%,-50%);
 }
 
-.arrow {
+.common_arrow {
     width: var(--arrow_inner);
     height: var(--arrow_inner);
     border-top: var(--arrow_border) solid var(--arrow_color);
@@ -72,7 +72,7 @@ a {
     }
 }
 
-.follow {
+.common_follow {
     height: var(--button_c_height);
     width: calc(var(--button_c_width) + 40px);
     position: absolute;

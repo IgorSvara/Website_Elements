@@ -83,6 +83,6 @@ body {
 .deactivate-button {
     background-color: transparent;
 }
-.deactivate-button > .arrow {
+.deactivate-button > .arrow{
     box-shadow: 2px -2px 0 #ec1c24;
 }

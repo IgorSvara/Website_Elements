@@ -1,6 +1,6 @@
-const button_c = document.querySelector('.button-container');
-const arrow = document.querySelector('.arrow');
-const follow_e = document.querySelector('.follow')
+const button_c = document.querySelector('.common_button-container');
+const arrow = document.querySelector('.common_arrow');
+const follow_e = document.querySelector('.common_follow')
 
 button_c.addEventListener('click', () => {
     arrow.style.animation = `none`;

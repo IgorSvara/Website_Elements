@@ -19,13 +19,6 @@ svg + svg {
     margin-left: 1.5rem;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Segoe UI, sans-serif;
-}
-
 body {
     min-height: 100vh;
     display: flex;
