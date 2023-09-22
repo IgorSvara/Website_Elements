@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><b><i>🌐 Awesome Web Elements Showcase 🌐</i></b></h1>
+  <h1><b><i>🌐 Web Elements Showcase 🌐</i></b></h1>
 </div>
 
 <br>
