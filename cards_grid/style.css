@@ -1,3 +1,5 @@
+@import "../display_button_css/button.css";
+
 body {
     padding: 0;
     background-color: #545454;

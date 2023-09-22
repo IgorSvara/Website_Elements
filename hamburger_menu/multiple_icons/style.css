@@ -1,3 +1,5 @@
+@import "../../display_button_css/button.css";
+
 body {
     align-items: center;
     display: flex;

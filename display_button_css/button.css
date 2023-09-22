@@ -11,6 +11,13 @@
     --arrow_inner: calc(var(--button_c_height)/1.4 - 2 * var(--arrow_border));
 }
 
+.button-banner {
+    position: fixed;
+
+    left: 30px;
+    top: 30px;
+}
+
 .button-container {
     font-family: "Droid Sans", sans-serif;
     font-weight: bold;
