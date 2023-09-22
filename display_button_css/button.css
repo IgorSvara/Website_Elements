@@ -1,0 +1,72 @@
+:root {
+    --button_color: #FF6969;
+    --arrow_color: #C70039;
+    --text_color: #141E46;
+
+    --text_size: 25px;
+
+    --button_c_height: calc(var(--text_size) + 2 * 15px);
+    --button_c_width: calc(var(--button_c_height)*2);
+    --arrow_border: 10px;
+    --arrow_inner: calc(var(--button_c_height)/1.4 - 2 * var(--arrow_border));
+}
+
+.button-container {
+    font-family: "Droid Sans", sans-serif;
+    font-weight: bold;
+
+    height: var(--button_c_height);
+    width: var(--button_c_width);
+    background-color: var(--button_color);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.button {
+    font-size: var(--text_size);
+    color: var(--text_color);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.arrow {
+    width: var(--arrow_inner);
+    height: var(--arrow_inner);
+    border-top: var(--arrow_border) solid var(--arrow_color);
+    border-left: var(--arrow_border) solid var(--arrow_color);
+    border-right: var(--arrow_border) solid transparent;
+    border-bottom: var(--arrow_border) solid transparent;
+
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+@keyframes moveArrow {
+    0% {
+        left: 110%;
+    }
+    100% {
+        left: -20%;
+    }
+}
+
+.follow {
+    height: var(--button_c_height);
+    width: calc(var(--button_c_width) + 40px);
+    position: absolute;
+    left: 110%;
+    /*background-color: #588199;*/
+    /*background-color: rgba(255, 0, 0, 0.31);*/
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--button_color) 20%);
+    /*border-bottom-left-radius: 20px;*/
+    /*border-top-left-radius: 20px;*/
+    /*transform: translateX(6px);*/
+}
