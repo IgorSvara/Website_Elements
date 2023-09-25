@@ -1,17 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+@import "../../display_button_css/button.css";
+
 body {
     background-color: #337ccf;
     color: #ffc436;
 }
+
 p {
     margin: 20px;
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
     letter-spacing: 10px;
 }
+
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -20,10 +24,12 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 .wrapper svg {
     border-radius: 10px;
     box-shadow: 5px 5px 15px #4c4c4c;
 }
+
 svg .svg-elem-1 {
     stroke-dashoffset: 52.26548245743669px;
     stroke-dasharray: 52.26548245743669px;
