@@ -50,6 +50,13 @@ body {
     top: 0;
     left: calc(var(--slider_width) / 2 - var(--slider_thumb_width) / 2);
     cursor: pointer;
+
+    /* Disable dragging */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 

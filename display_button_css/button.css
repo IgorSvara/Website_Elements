@@ -1,14 +1,33 @@
 :root {
-    --button_color: #FF6969;
-    --arrow_color: #C70039;
-    --text_color: #141E46;
+    --button_color: #5adbb5;
+    --arrow_color: #33b249;
+    --text_color: #2F4858;
 
-    --text_size: 25px;
+    --text_size: 2vw;
+    --side_padding: var(--text_size);
+    --top_padding: calc(var(--text_size) / 2);
+    --button_radius: calc(var(--text_size) / 2);
 
-    --button_c_height: calc(var(--text_size) + 2 * 15px);
-    --button_c_width: calc(var(--button_c_height)*2);
-    --arrow_border: 10px;
-    --arrow_inner: calc(var(--button_c_height)/1.4 - 2 * var(--arrow_border));
+    --button_c_height: calc(var(--text_size) + 2 * var(--top_padding));
+    --button_c_width: calc(var(--button_c_height) + 2 * var(--side_padding));
+    --arrow_border: var(--top_padding);
+    --arrow_inner: calc(var(--button_c_height) / 1.4);
+
+
+    --animation_to: calc(0px - var(--arrow_border) / 2 - var(--button_c_height) / 2);
+    --animation_from: calc(var(--button_c_width) + var(--arrow_border) * 1.4);
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --text_size: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --text_size: 5vw;
+    }
 }
 
 a {
@@ -31,12 +50,18 @@ a {
 
     height: var(--button_c_height);
     width: var(--button_c_width);
+
     background-color: var(--button_color);
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    border-radius: var(--button_radius);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+
     cursor: pointer;
     position: relative;
 
     overflow: hidden;
+
+    z-index: 100;
 }
 
 .common_button {
@@ -46,7 +71,7 @@ a {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .common_arrow {
@@ -59,16 +84,23 @@ a {
 
     position: absolute;
     top: 50%;
-    left: 110%;
+    left: var(--animation_from);
     transform: translateY(-50%) rotate(-45deg);
 }
 
+.common_arrow div {
+    height: var(--button_c_width);
+    width: var(--button_c_width);
+    background: linear-gradient(0.375turn, rgba(0, 0, 0, 0), var(--button_color) 20%);
+}
+
+
 @keyframes moveArrow {
     0% {
-        left: 110%;
+        left: var(--animation_from);
     }
     100% {
-        left: -20%;
+        left: var(--animation_to);
     }
 }
 
@@ -77,10 +109,5 @@ a {
     width: calc(var(--button_c_width) + 40px);
     position: absolute;
     left: 110%;
-    /*background-color: #588199;*/
-    /*background-color: rgba(255, 0, 0, 0.31);*/
     background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--button_color) 20%);
-    /*border-bottom-left-radius: 20px;*/
-    /*border-top-left-radius: 20px;*/
-    /*transform: translateX(6px);*/
 }

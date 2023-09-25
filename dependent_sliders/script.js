@@ -1,88 +1,94 @@
+class Slider {
 
-const slider = document.querySelector(".slider");
-const sliderThumbs = document.querySelectorAll(".slider-thumb");
-const numbers = document.querySelectorAll(".numbers");
-const MAX_VALUE = 100 * sliderThumbs.length;
+    min = 0
+    max = 100
 
-let isDragging = false;
-let targetSlider = null;
+    constructor(ele, listener) {
+        this._value = 0
+        this._dragging = false
 
-sliderThumbs.forEach((ele,idx) => {
-    ele.style.transform = `translateY(${slider.clientHeight - (slider.clientHeight / 2) - ele.clientHeight / 2}px)`;
-});
-refreshNumbers();
+        // Extract components
+        this.lineEle = ele.querySelector('.slider')
 
-sliderThumbs.forEach((item) => {
-    item.addEventListener("mousedown", (e) => {
-        isDragging = true;
-        targetSlider = e.target;
-    });
-});
-
-document.addEventListener("mouseup", () => {
-    isDragging = false;
-    targetSlider = null;
-});
-
-document.addEventListener("mousemove", (e) => {
-    if (!isDragging) return;
-    const offsetY = e.clientY - slider.getBoundingClientRect().top;
-    const newValue = Math.min(slider.clientHeight, Math.max(0, offsetY));
-    if(sliderThumbs.length!==1) {
-        correctRestPosition(targetSlider, newValue - getPosition(targetSlider));
-    }
-    setPosition(targetSlider, newValue);
-});
-
-// position from the top
-function getPosition (ele) {
-    return ele.getBoundingClientRect().top + (ele.clientHeight / 2)  - slider.getBoundingClientRect().top;
-}
-// sets the position newY form the top
-function setPosition (ele, newY) {
-    return ele.style.transform = `translateY(${newY - ele.clientHeight/2}px)`;
-}
-function refreshNumbers() {
-    sliderThumbs.forEach((ele, idx) => {
-        const position = getPosition(ele);
-
-        let value = Math.round((slider.clientHeight - position )/ slider.clientHeight * MAX_VALUE);
-
-        numbers[idx].textContent = `${value}`;
-    });
-}
-function correctRestPosition(ele, m_amount) { // m_amount in the direction of the moved slider
-    let excluded = [ele];
-    let c = 0;
-    m_amount *= -1;     // m_amount now in the direction in which the other sliders must go
-
-    while (Math.abs(m_amount) > 1e-3) {
-        let residual = 0;
-        c++;
-        if (c > 100) {
-            alert("CRASH: infinite loop");
-            return;
-        }
-        const count =  sliderThumbs.length - excluded.length;
-        const sliders_n = count < 1 ? 1 : count;
-        const partial_move = m_amount / sliders_n;
-
-        sliderThumbs.forEach((inner_ele) => {
-            if (! excluded.includes(inner_ele)) {
-                // move the element by its partial move
-                const current_pos = getPosition(inner_ele);
-                let where = current_pos + partial_move;
-                if (where < 0 || where > slider.clientHeight) {
-                    const old_where = where;
-                    where = where < 0 ? 0 : slider.clientHeight;
-                    m_amount += old_where - where;
-                    excluded.push(inner_ele);
-                }
-                setPosition(inner_ele, where);
-                m_amount -= partial_move;
-            }
+        this.thumbEle = ele.querySelector('.slider-thumb')
+        // Define dragging loop
+        let draggingOffset = 0
+        this.thumbEle.addEventListener('mousedown', (e) => {
+            this._dragging = true;
+            draggingOffset = e.clientY - this.thumbEle.getBoundingClientRect().top - this.thumbEle.clientHeight / 2
+            listener?.(this)
         })
-        m_amount += residual;
-        refreshNumbers();
+        document.addEventListener('mousemove', (e) => {
+            if (!this._dragging) return
+            const offsetY = e.clientY - this.lineEle.getBoundingClientRect().top - draggingOffset
+            const clippedValue = Math.min(this.lineEle.clientHeight, Math.max(0, offsetY))
+            this.value = (clippedValue / this.lineEle.clientHeight) * (this.max - this.min) + this.min
+            listener?.(this)
+        })
+        document.addEventListener('mouseup', () => {
+            this._dragging = false
+            listener?.(this)
+        })
+
+        // Set initial position
+        this.value = 0
     }
+
+    get dragging() {
+        return this._dragging
+    }
+
+    get value() {
+        return this._value
+    }
+
+    set value(value) {
+        this._value = Math.min(this.max, Math.max(this.min, value))
+        this.thumbEle.style.transform = `translateY(${
+            ((this._value - this.min) / (this.max - this.min))
+            * (this.lineEle.clientHeight - this.lineEle.clientWidth)
+            - (this.thumbEle.clientHeight / 2)
+            + (this.lineEle.clientWidth / 2)
+        }px)`;
+    }
+
+    get isMax() {
+        return this._value === this.max
+    }
+
+    get isMin() {
+        return this._value === this.min
+    }
+
 }
+
+
+// Usage
+const sliderEls = Array.from(document.querySelectorAll(".slider-container"))
+const numberEls = Array.from(document.querySelectorAll(".numbers"))
+const totalValue = sliderEls.length * 100
+const sliders = sliderEls.map(ele => {
+    const slider = new Slider(ele, onUpdate)
+    slider.max = totalValue
+    return slider
+})
+
+function onUpdate(slider) {
+
+    // Do this
+    for (let i = 0; i < (sliderEls.length + 1); i++) {
+        const delta
+            = totalValue
+            - sliders.map(s => s.value).reduce((a, b) => a + b, 0)
+        if (delta === 0) break
+        const candidates = sliders
+            .filter(s => s !== slider && (delta >= 0 ? !s.isMax : !s.isMin))
+        candidates.forEach(s => s.value += delta / candidates.length)
+    }
+
+    // Update texts
+    sliders.forEach((s, ix) => numberEls[ix].textContent = `${Math.round(s.value)}`)
+
+}
+
+onUpdate()
