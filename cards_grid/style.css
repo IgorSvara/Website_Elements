@@ -1,10 +1,11 @@
 @import "../display_button_css/button.css";
 
 body {
-    padding: 0;
+    padding: 20px;
     background-color: #545454;
 
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -14,7 +15,7 @@ body {
     align-content: start;
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px 0 ;
+    padding: 20px 0;
 }
 
 .grid-item {
@@ -37,6 +38,6 @@ body {
 }
 
 .grid-item:hover {
-    background-color:  #333;
+    background-color: #333;
     color: #fff;
 }
