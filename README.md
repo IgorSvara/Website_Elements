@@ -2,22 +2,22 @@
   <h1><b><i>🌐 Web Elements Showcase 🌐</i></b></h1>
 </div>
 
-<br>
+<br/>
 
 
 Welcome to the **Awesome Web Elements Showcase**, your go-to resource for exploring and learning about captivating website elements and how they are crafted. This repository is a treasure trove of **inspiration** and **education**, designed to help **novice developers** elevate their web design and development skills.
 
 
-Check it out: <br>
+Check it out: <br/>
 https://igorsvara.github.io/Website_Elements/
 
-<br>
+<br/>
 
 Feel free to further customize this styled description to your liking, and adapt it to the specific elements and goals of your repository.
 
 ---
 
-<br>
+<br/>
 
 ## Table of Contents
 - [Pagination bar](#pagination_bar)
@@ -29,7 +29,7 @@ Feel free to further customize this styled description to your liking, and adapt
 - [Alarm animation](#alarm_animation)
 - more...
 
-<br>
+<br/>
 
 ## 1. Pagination bar <a name="pagination_bar"></a>
 
@@ -40,7 +40,7 @@ Feel free to further customize this styled description to your liking, and adapt
 A pagination bar that gives a quick idea of the amount of content and where 
 the view is currently at. Simple and minimal design.
 
-<br>
+<br/>
 
 ## 2. Dependent sliders <a name="sliders"></a>
 
@@ -50,7 +50,7 @@ the view is currently at. Simple and minimal design.
 
 An arbitrary number of sliders related to each other.
 
-<br>
+<br/>
 
 ## 3. Single hamburger menu <a name="single_menu"></a>
 
@@ -60,7 +60,7 @@ An arbitrary number of sliders related to each other.
 
 An elegant single hamburger menu with a precise left-pointing arrow animation.
 
-<br>
+<br/>
 
 ## 4. Multiple hamburger menus <a name="multiple_menu"></a>
 
@@ -70,7 +70,7 @@ An elegant single hamburger menu with a precise left-pointing arrow animation.
 
 A collection of eight menu icons that transition gracefully from a hamburger menu to a closing icon.
 
-<br>
+<br/>
 
 ## 5. Image reveal <a name="image_reveal"></a>
 
@@ -80,7 +80,7 @@ A collection of eight menu icons that transition gracefully from a hamburger men
 
 A nice way to display some images that has no background. This can be also used to implement a carousel as animation.
 
-<br>
+<br/>
 
 ## 6. Carousel <a name="carousel"></a>
 
@@ -90,7 +90,7 @@ A nice way to display some images that has no background. This can be also used 
 
 A seamless carousel element designed for easy item exploration. It smoothly loops back to the beginning after reaching the end.
 
-<br>
+<br/>
 
 ## 7. Alarm animation <a name="alarm_animation"></a>
 
@@ -100,7 +100,7 @@ A seamless carousel element designed for easy item exploration. It smoothly loop
 
 An animated clock icon that disappears and reappears with a stylish animation when clicked.
 
-<br>
+<br/>
 
 ## more ...
 
